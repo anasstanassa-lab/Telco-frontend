@@ -5,7 +5,7 @@ import axios from "axios";
  * 1. Use 'import.meta.env' instead of 'process.env'
  * 2. Ensure your variable in .env starts with 'VITE_'
  */
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000";
+const BASE_URL = import.meta.env.VITE_API_BASE_URL || "https://telcopulse.duckdns.org";
 
 const api = axios.create({
   baseURL: BASE_URL,
